@@ -18,5 +18,5 @@ COPY php-fpm.conf /usr/local/etc/
 COPY nginx.server.conf /etc/nginx/sites-enabled/default
 COPY script.php /var/www/html/script.php
 COPY entrypoint /
-
+EXPOSE 9000 80 443
 CMD /entrypoint
